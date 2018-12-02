@@ -9,11 +9,9 @@ class Home extends Component {
             type: HEADER_BLOCK,
             block: {
                 key: "Home-button",
-                render: () => {
-                    return (
-                        <button>Test button from another component</button>
-                    );
-                }
+                render: () => (
+                    <button>Test button from another component</button>
+                )
             }
         });
 

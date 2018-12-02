@@ -9,13 +9,11 @@ class Test extends Component {
             type: HEADER_BLOCK,
             block: {
                 key: "Test-text",
-                render: () => {
-                    return (
-                        <div>
-                            <h3>This component added from child component "Test" to Header</h3>
-                        </div>
-                    );
-                }
+                render: () => (
+                    <div>
+                        <h3>This component added from child component "Test" to Header</h3>
+                    </div>
+                )
             }
         });
     }
