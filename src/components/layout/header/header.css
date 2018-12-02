@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex: 0;
+    align-items: stretch;
+    min-height: 4rem;
+    border-bottom: 1px solid #efefef;
+}
+header a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+header h1 {
+    flex: 0;
+    width: 4rem;
+    padding: 0.6rem 1.4rem;
+    background: lightskyblue;
+    color: #ffffff;
+}
+.header-block{
+    align-self: center;
+    padding: 0.5rem;
+}

@@ -1,0 +1,2 @@
+export const SIDEBAR_BLOCK = "SIDEBAR_BLOCK";
+export const HEADER_BLOCK = "HEADER_BLOCK";
