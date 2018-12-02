@@ -18,8 +18,7 @@ const wrapper = (WrappedComponent) => {
                 case HEADER_BLOCK:
                     if (!this.isBlockExists(action.block, this.state.headerBlocks)) {
                         this.setState(({headerBlocks}) => {
-                            const newHeaderBlocks = headerBlocks.slice(0);
-                            newHeaderBlocks.push(action.block);
+                            const newHeaderBlocks = [...headerBlocks, action.block];
                             return {
                                 headerBlocks: newHeaderBlocks
                             };
@@ -29,8 +28,7 @@ const wrapper = (WrappedComponent) => {
                 case SIDEBAR_BLOCK:
                     if (!this.isBlockExists(action.block, this.state.sidebarBlocks)) {
                         this.setState(({sidebarBlocks}) => {
-                            const newSidebarBlocks = sidebarBlocks.slice(0);
-                            newSidebarBlocks.push(action.block);
+                            const newSidebarBlocks = [...sidebarBlocks, action.block];
                             return {
                                 sidebarBlocks: newSidebarBlocks
                             };
